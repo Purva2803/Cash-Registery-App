@@ -3,20 +3,21 @@
     
     width: 50vw;
     background-color: lightgreen;
-    align-self: center;
     text-align: center;
-    height: 200px;
-    width : 200px;
-    display: table-cell;
-    vertical-align: middle;
-    margin-left: 150px;
-    margin-right: 150px;
-    display:"flex" 
-    
-    
-  
-                
-                
+    height: fit-content;
+    width: fit-content;
 
-            
+    -moz-box-align: center;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display:"flex" 
+    }
+.no-of-notes{
+    display:table-cell;
+    vertical-align:middle;
+    border: 1px solid ;
+    border-color: black;
+    
+    
 }
