@@ -1,6 +1,22 @@
 .container{
-    display: flex;
-    flex-direction:column;
-    width: 50vw;
     
+    
+    width: 50vw;
+    background-color: lightgreen;
+    align-self: center;
+    text-align: center;
+    height: 200px;
+    width : 200px;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 150px;
+    margin-right: 150px;
+    display:"flex" 
+    
+    
+  
+                
+                
+
+            
 }
