@@ -2,10 +2,12 @@
     
     
     width: 50vw;
-    background-color: lightgreen;
+    border: 2px black solid;
+    background-color: #7FA0A0;
     text-align: center;
     height: fit-content;
     width: fit-content;
+    border-radius: 12px;
 
     -moz-box-align: center;
     vertical-align: middle;
@@ -21,3 +23,4 @@
     
     
 }
+
