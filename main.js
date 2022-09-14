@@ -12,18 +12,13 @@ const noteswehave = [2000,500,200,100,50,20,10];
 checkButton.addEventListener("click" ,function ValidateAmount(){
      errorMSG.style.display ="none";
     if (billAmount.value > 0){
-        if (cashGiven.value >= billAmount.value){
+        
+        if(cashGiven.value >= billAmount.value){
             const amountToBeReturned = cashGiven.value - billAmount.value;
+            console.log(amountToBeReturned);
             calculateChange(amountToBeReturned);
-           /* if(amountToBeReturned ===0)
-            {
-                showMSG("No amount should be returned");
-            }
-            else
-            {
-                  calculateChange(amountToBeReturned);
-            }
-        }*/
+            // console.log(amountToBeReturned);
+           
     }
         else{
              showMSG("do you wana wash plates?");
@@ -32,16 +27,16 @@ checkButton.addEventListener("click" ,function ValidateAmount(){
     
     else{
         showMSG("Invalid bill amount");
-        //errorMSG.style.display ="block";
-        //errorMSG.innerText ="Please enter the valid bill amount";
+        
     }
 
 });
 function calculateChange(amountToBeReturned){
-    for(let i=0;i<noteswehave.length;i++){
-        const numberofnotes =Math.trunc(amountToBeReturned/noteswehave[i]);
+    for(let i=0; i < noteswehave.length; i++){
+        const numberofnotes =Math.trunc(amountToBeReturned / noteswehave[i]);
         amountToBeReturned = amountToBeReturned % noteswehave[i];
         Noofnotes[i].innerText = numberofnotes;
+        console.log(numberofnotes);
     }
 
 
